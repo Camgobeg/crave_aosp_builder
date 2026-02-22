@@ -111,7 +111,7 @@ jobs:
 
         breakfast ${{ github.event.inputs.PRODUCT_NAME }} ${{ github.event.inputs.BUILD_TYPE }}
 
-        mka bacon -j$(nproc)
+        m vm-utm-zip otapackage
 
     - name: Upload build
       uses: actions/upload-artifact@v4
